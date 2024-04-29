@@ -1,5 +1,7 @@
 package com.medline.brand.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,6 +17,11 @@ public class BrandService {
 	public Brand saveBrand(Brand brand ) {
 		
 		return brandrepositoy.save(brand);
+	}
+
+	public List<Brand> fetchBrandList() {
+		// TODO Auto-generated method stub
+		return brandrepositoy.findAll();
 	}
 
 }
