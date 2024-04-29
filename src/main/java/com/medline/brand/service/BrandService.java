@@ -24,4 +24,9 @@ public class BrandService {
 		return brandrepositoy.findAll();
 	}
 
+	public Brand fectchBrandById(Long brandByID) {
+		// TODO Auto-generated method stub
+		return brandrepositoy.findById(brandByID).get();
+	}
+
 }
