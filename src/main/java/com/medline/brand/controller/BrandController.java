@@ -31,15 +31,6 @@ public class BrandController {
 	public List<Brand> fetchBrandtList(){
 		
 		return brandservice.fetchBrandList();
-		
-		
-	}
-	
-	
-	@GetMapping("/getallbrands/{id}")
-	public Brand fectchBrandById(@PathVariable("id") Long brandByID) {
-		
-		return brandservice.fectchBrandById(brandByID);
 	}
 	
 	
