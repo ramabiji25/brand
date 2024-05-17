@@ -9,4 +9,8 @@ import com.medline.brand.entity.Brand;
 
 public interface BrandRepository extends JpaRepository<Brand, Long>{
 
+	 public Brand findByBrandName(String brandName);
+
+	public Brand findByBrandNameIgnoreCase(String brandName);
+
 }
